@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'djangovuewebpack.urls'
+ROOT_URLCONF = 'work.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'djangovuewebpack.wsgi.application'
+WSGI_APPLICATION = 'work.wsgi.application'
 
 
 # Database
