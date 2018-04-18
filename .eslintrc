@@ -9,7 +9,8 @@
       "Request": true,
       "FormData": true,
       "FileReader": true,
-      "localStorage": true
+      "localStorage": true,
+      "Vue": false
     },
     "env": {
       "node": true,
