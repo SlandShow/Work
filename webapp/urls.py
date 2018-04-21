@@ -1,5 +1,5 @@
-#from django.conf.urls import url, include
-
+from django.conf.urls import url, include
+# from .views import index
 #from .views import MessageViewSet
 
 #urlpatterns = [
@@ -18,4 +18,10 @@ router = routers.DefaultRouter()
 router.register(r'message', MessageViewSet)
 
 # URLs настраиваются автоматически роутером
-urlpatterns = router.urls
+urlpatterns = [
+  url(r'^$', MessageViewSet, name='message'),
+  # url(r'^api/test', views.test_api, name='test_api')
+]
+ 
+urlpatterns += router.urls
+# = router.urls
