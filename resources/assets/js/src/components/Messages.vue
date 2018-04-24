@@ -8,7 +8,7 @@
 </template>
 
 <script>
-// import axios from 'axios'
+import axios from 'axios'
 import Message from './Message'
     export default {
         name: 'messages',
@@ -24,17 +24,17 @@ import Message from './Message'
         methods: {
             // FIXME:
             get_messages: function(){
-/*                 this.intervalid1 = setInterval(() => {
+                this.intervalid1 = setInterval(() => {
                     console.log('get')
                     this.messages.push('3')
-                    axios.get('api/mark_read?id={}')
+                    axios.get('api/message?id={}')
                       .then((responce) => {
                       this.data = responce.data
                       })
                       .catch((error) => {
                       console.log(error)
                     })
-                }, 10000) */
+                }, 10000)
             }
         },
         components: {
@@ -44,5 +44,4 @@ import Message from './Message'
 </script>
 
 <style scoped>
-
 </style>
