@@ -9,7 +9,7 @@
 </template>
 
 <script>
-    // import axios from 'axios'
+    import axios from 'axios'
     export default {
         name: 'message',
         data () {
@@ -21,7 +21,7 @@
             readed: function() {
                 console.log('Message readed')
                 // FIXME:
-                // axios.call('api/mark_read?id={}')
+                axios.call('api/message?id={}')
                 // this.data.readed = true
             }
         }
